@@ -12,7 +12,7 @@ def _swiglu_kernel(
     BLOCK_SIZE_M: tl.constexpr,
     BLOCK_SIZE_N: tl.constexpr,
     BLOCK_SIZE_K: tl.constexpr,
-    OUT_DTYPE: tl.constexpr = tl.float32,
+    OUT_DTYPE: tl.constexpr = tl.float32
 ):
     pid_m = tl.program_id(0)
     pid_n = tl.program_id(1)

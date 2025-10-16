@@ -30,7 +30,7 @@ def test_swiglu(M, K, N, dtype, beta):
 	b = torch.randn(N, device=device, dtype=dtype)
 	c = torch.randn(N, device=device, dtype=dtype)
 
-	# Triton implementation
+	# Triton implementation 
 	y_triton = swiglu(x, w, v, b, c, beta=beta)
 
 	# PyTorch implementation

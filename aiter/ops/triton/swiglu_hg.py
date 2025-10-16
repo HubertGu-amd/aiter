@@ -50,7 +50,7 @@ def swiglu(
     Returns:
         torch.Tensor: A tensor of the shape (M, N), where SwiGLU activation has been
         applied with: 
-            y = ( (x1 @ W + b) * sigmoid(beta * (x1 @ W + b)) * (x2 @ V + c) )
+            y = ( (x1 @ W + b) * sigmoid(beta * (x1 @ W + b)) * (x2 @ V + c) ) 
     """
     # Validation
     assert x.dtype == w.dtype == v.dtype == b.dtype == c.dtype, "Dtypes must match"
